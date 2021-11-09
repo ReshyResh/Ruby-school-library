@@ -6,6 +6,7 @@ class Person
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @helper = Corrector.new
   end
   attr_reader :id
   attr_accessor :name, :age
@@ -14,6 +15,10 @@ class Person
     return false unless of_age? or @parent_permission == true
 
     true
+  end
+
+  def validate_name
+    @name = @helper.correct_name(@name)
   end
 
   private
@@ -27,3 +32,4 @@ end
 
 require './student'
 require './teacher'
+require './corrector'
