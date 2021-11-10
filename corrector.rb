@@ -5,6 +5,7 @@ class Corrector
     letters.first.upcase!
     letters.join
   end
+
   def lowercase(str)
     str.downcase
   end
