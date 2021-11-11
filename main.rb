@@ -28,7 +28,7 @@ class App
 7 | List all rentals for a given person id
 8 | List all classrooms
 9 | Create a new classroom
-10 | List all students for a given classroom
+10| List all students for a given classroom
 11| Change a student's classroom
 12| Exit"
       puts "\nSelect an option: "
