@@ -19,10 +19,9 @@ class Student < Person
       classes_objects = Classroom.class_variable_get(:@@classes_object)
 
       if classes_names.include?(@classroom)
-        [(puts 'Student added to existing classroom'),
-         classes_objects[classes_names.find_index(@classroom)].students.push(self)]
+        classes_objects[classes_names.find_index(@classroom)].students.push(self)
       else
-        [(puts 'New classroom created'), new_class = Classroom.new(@classroom), new_class.label = @classroom,
+        [new_class = Classroom.new(@classroom), new_class.label = @classroom,
          new_class.students.push(self)]
       end
 
