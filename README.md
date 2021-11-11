@@ -14,7 +14,7 @@ Clone the repo and run `bundle install` in the command line to install the depen
 # Usage
   - # From the user interface
   ### Run the `main.rb` file, you will be greeted with a menu where you can control the program.
-  ![](https://i.imgur.com/Vbr8jbC.png)
+  ![](https://i.imgur.com/4wjjD3e.png)
   
   ### Select any function by typing its number and exit the program by typing '12'.
   
